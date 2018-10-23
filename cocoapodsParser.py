@@ -1,32 +1,31 @@
 # Generated from cocoapods.g4 by ANTLR 4.7.1
 # encoding: utf-8
-from __future__ import print_function
 from antlr4 import *
 from io import StringIO
+from typing.io import TextIO
 import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write(u"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3")
-        buf.write(u"\168\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
-        buf.write(u"\3\2\7\2\20\n\2\f\2\16\2\23\13\2\3\2\5\2\26\n\2\3\2\7")
-        buf.write(u"\2\31\n\2\f\2\16\2\34\13\2\3\2\3\2\7\2 \n\2\f\2\16\2")
-        buf.write(u"#\13\2\3\2\3\2\3\3\3\3\3\3\3\3\3\3\5\3,\n\3\5\3.\n\3")
-        buf.write(u"\3\4\3\4\3\5\3\5\3\6\3\6\3\7\3\7\3\7\2\2\b\2\4\6\b\n")
-        buf.write(u"\f\2\2\2\67\2\21\3\2\2\2\4&\3\2\2\2\6/\3\2\2\2\b\61\3")
-        buf.write(u"\2\2\2\n\63\3\2\2\2\f\65\3\2\2\2\16\20\7\16\2\2\17\16")
-        buf.write(u"\3\2\2\2\20\23\3\2\2\2\21\17\3\2\2\2\21\22\3\2\2\2\22")
-        buf.write(u"\25\3\2\2\2\23\21\3\2\2\2\24\26\5\f\7\2\25\24\3\2\2\2")
-        buf.write(u"\25\26\3\2\2\2\26\32\3\2\2\2\27\31\7\16\2\2\30\27\3\2")
-        buf.write(u"\2\2\31\34\3\2\2\2\32\30\3\2\2\2\32\33\3\2\2\2\33\35")
-        buf.write(u"\3\2\2\2\34\32\3\2\2\2\35!\5\4\3\2\36 \7\16\2\2\37\36")
-        buf.write(u"\3\2\2\2 #\3\2\2\2!\37\3\2\2\2!\"\3\2\2\2\"$\3\2\2\2")
-        buf.write(u"#!\3\2\2\2$%\7\2\2\3%\3\3\2\2\2&-\5\6\4\2\'(\7\f\2\2")
-        buf.write(u"(+\5\b\5\2)*\7\f\2\2*,\5\n\6\2+)\3\2\2\2+,\3\2\2\2,.")
-        buf.write(u"\3\2\2\2-\'\3\2\2\2-.\3\2\2\2.\5\3\2\2\2/\60\7\4\2\2")
-        buf.write(u"\60\7\3\2\2\2\61\62\7\4\2\2\62\t\3\2\2\2\63\64\7\4\2")
-        buf.write(u"\2\64\13\3\2\2\2\65\66\7\3\2\2\66\r\3\2\2\2\b\21\25\32")
-        buf.write(u"!+-")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\16")
+        buf.write("8\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\3\2")
+        buf.write("\7\2\20\n\2\f\2\16\2\23\13\2\3\2\5\2\26\n\2\3\2\7\2\31")
+        buf.write("\n\2\f\2\16\2\34\13\2\3\2\3\2\7\2 \n\2\f\2\16\2#\13\2")
+        buf.write("\3\2\3\2\3\3\3\3\3\3\3\3\3\3\5\3,\n\3\5\3.\n\3\3\4\3\4")
+        buf.write("\3\5\3\5\3\6\3\6\3\7\3\7\3\7\2\2\b\2\4\6\b\n\f\2\2\2\67")
+        buf.write("\2\21\3\2\2\2\4&\3\2\2\2\6/\3\2\2\2\b\61\3\2\2\2\n\63")
+        buf.write("\3\2\2\2\f\65\3\2\2\2\16\20\7\16\2\2\17\16\3\2\2\2\20")
+        buf.write("\23\3\2\2\2\21\17\3\2\2\2\21\22\3\2\2\2\22\25\3\2\2\2")
+        buf.write("\23\21\3\2\2\2\24\26\5\f\7\2\25\24\3\2\2\2\25\26\3\2\2")
+        buf.write("\2\26\32\3\2\2\2\27\31\7\16\2\2\30\27\3\2\2\2\31\34\3")
+        buf.write("\2\2\2\32\30\3\2\2\2\32\33\3\2\2\2\33\35\3\2\2\2\34\32")
+        buf.write("\3\2\2\2\35!\5\4\3\2\36 \7\16\2\2\37\36\3\2\2\2 #\3\2")
+        buf.write("\2\2!\37\3\2\2\2!\"\3\2\2\2\"$\3\2\2\2#!\3\2\2\2$%\7\2")
+        buf.write("\2\3%\3\3\2\2\2&-\5\6\4\2\'(\7\f\2\2(+\5\b\5\2)*\7\f\2")
+        buf.write("\2*,\5\n\6\2+)\3\2\2\2+,\3\2\2\2,.\3\2\2\2-\'\3\2\2\2")
+        buf.write("-.\3\2\2\2.\5\3\2\2\2/\60\7\4\2\2\60\7\3\2\2\2\61\62\7")
+        buf.write("\4\2\2\62\t\3\2\2\2\63\64\7\4\2\2\64\13\3\2\2\2\65\66")
+        buf.write("\7\3\2\2\66\r\3\2\2\2\b\21\25\32!+-")
         return buf.getvalue()
 
 
@@ -40,14 +39,13 @@ class cocoapodsParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                     u"'0'", u"<INVALID>", u"'['", u"']'", u"'('", u"')'", 
-                     u"'.'", u"','" ]
+    literalNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "'0'", "<INVALID>", "'['", "']'", "'('", "')'", "'.'", 
+                     "','" ]
 
-    symbolicNames = [ u"<INVALID>", u"OPERATOR", u"VERSION_ELEMENT", u"NON_ZERO", 
-                      u"ZERO", u"NUMBER", u"LEFT_BRACKET", u"RIGHT_BRACKET", 
-                      u"LEFT_PARENS", u"RIGHT_PARENS", u"DOT", u"COMMA", 
-                      u"WS" ]
+    symbolicNames = [ "<INVALID>", "OPERATOR", "VERSION_ELEMENT", "NON_ZERO", 
+                      "ZERO", "NUMBER", "LEFT_BRACKET", "RIGHT_BRACKET", 
+                      "LEFT_PARENS", "RIGHT_PARENS", "DOT", "COMMA", "WS" ]
 
     RULE_requirement = 0
     RULE_version = 1
@@ -56,8 +54,8 @@ class cocoapodsParser ( Parser ):
     RULE_patch = 4
     RULE_operator = 5
 
-    ruleNames =  [ u"requirement", u"version", u"major", u"minor", u"patch", 
-                   u"operator" ]
+    ruleNames =  [ "requirement", "version", "major", "minor", "patch", 
+                   "operator" ]
 
     EOF = Token.EOF
     OPERATOR=1
@@ -73,8 +71,8 @@ class cocoapodsParser ( Parser ):
     COMMA=11
     WS=12
 
-    def __init__(self, input, output=sys.stdout):
-        super(cocoapodsParser, self).__init__(input, output=output)
+    def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
+        super().__init__(input, output)
         self.checkVersion("4.7.1")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
@@ -83,8 +81,8 @@ class cocoapodsParser ( Parser ):
 
     class RequirementContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(cocoapodsParser.RequirementContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
         def version(self):
@@ -94,7 +92,7 @@ class cocoapodsParser ( Parser ):
         def EOF(self):
             return self.getToken(cocoapodsParser.EOF, 0)
 
-        def WS(self, i=None):
+        def WS(self, i:int=None):
             if i is None:
                 return self.getTokens(cocoapodsParser.WS)
             else:
@@ -107,13 +105,19 @@ class cocoapodsParser ( Parser ):
         def getRuleIndex(self):
             return cocoapodsParser.RULE_requirement
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterRequirement"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterRequirement" ):
                 listener.enterRequirement(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitRequirement"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitRequirement" ):
                 listener.exitRequirement(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRequirement" ):
+                return visitor.visitRequirement(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -178,15 +182,15 @@ class cocoapodsParser ( Parser ):
 
     class VersionContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(cocoapodsParser.VersionContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
         def major(self):
             return self.getTypedRuleContext(cocoapodsParser.MajorContext,0)
 
 
-        def DOT(self, i=None):
+        def DOT(self, i:int=None):
             if i is None:
                 return self.getTokens(cocoapodsParser.DOT)
             else:
@@ -203,13 +207,19 @@ class cocoapodsParser ( Parser ):
         def getRuleIndex(self):
             return cocoapodsParser.RULE_version
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterVersion"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterVersion" ):
                 listener.enterVersion(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitVersion"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitVersion" ):
                 listener.exitVersion(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVersion" ):
+                return visitor.visitVersion(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -253,8 +263,8 @@ class cocoapodsParser ( Parser ):
 
     class MajorContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(cocoapodsParser.MajorContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
         def VERSION_ELEMENT(self):
@@ -263,13 +273,19 @@ class cocoapodsParser ( Parser ):
         def getRuleIndex(self):
             return cocoapodsParser.RULE_major
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterMajor"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMajor" ):
                 listener.enterMajor(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitMajor"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMajor" ):
                 listener.exitMajor(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMajor" ):
+                return visitor.visitMajor(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -292,8 +308,8 @@ class cocoapodsParser ( Parser ):
 
     class MinorContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(cocoapodsParser.MinorContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
         def VERSION_ELEMENT(self):
@@ -302,13 +318,19 @@ class cocoapodsParser ( Parser ):
         def getRuleIndex(self):
             return cocoapodsParser.RULE_minor
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterMinor"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMinor" ):
                 listener.enterMinor(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitMinor"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMinor" ):
                 listener.exitMinor(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMinor" ):
+                return visitor.visitMinor(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -331,8 +353,8 @@ class cocoapodsParser ( Parser ):
 
     class PatchContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(cocoapodsParser.PatchContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
         def VERSION_ELEMENT(self):
@@ -341,13 +363,19 @@ class cocoapodsParser ( Parser ):
         def getRuleIndex(self):
             return cocoapodsParser.RULE_patch
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterPatch"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPatch" ):
                 listener.enterPatch(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitPatch"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPatch" ):
                 listener.exitPatch(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPatch" ):
+                return visitor.visitPatch(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -370,8 +398,8 @@ class cocoapodsParser ( Parser ):
 
     class OperatorContext(ParserRuleContext):
 
-        def __init__(self, parser, parent=None, invokingState=-1):
-            super(cocoapodsParser.OperatorContext, self).__init__(parent, invokingState)
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
             self.parser = parser
 
         def OPERATOR(self):
@@ -380,13 +408,19 @@ class cocoapodsParser ( Parser ):
         def getRuleIndex(self):
             return cocoapodsParser.RULE_operator
 
-        def enterRule(self, listener):
-            if hasattr(listener, "enterOperator"):
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterOperator" ):
                 listener.enterOperator(self)
 
-        def exitRule(self, listener):
-            if hasattr(listener, "exitOperator"):
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitOperator" ):
                 listener.exitOperator(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitOperator" ):
+                return visitor.visitOperator(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
