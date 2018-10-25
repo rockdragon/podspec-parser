@@ -1,7 +1,7 @@
 import json
 
 
-def typeof(o, repr):
+def is_typeof(o, repr):
     return type(o).__name__ == repr
 
 
@@ -16,13 +16,13 @@ class PodSpec(object):
         with open(filename, 'r') as f:
             json_dict = json.load(f)
             for k, v in json_dict.items():
-                if typeof(v, 'dict'):
+                if is_typeof(v, 'dict'):
                     self[k] = self.iterate_object(v)
                 else:
                     self[k] = v
 
     def iterate_object(self, obj):
-        if typeof(obj, 'dict'):
+        if is_typeof(obj, 'dict'):
             obj2 = PodSpecChild()
             for k, v in obj.items():
                 obj2[k] = self.iterate_object(v)
@@ -51,5 +51,5 @@ class PodSpecChild(object):
 if __name__ == '__main__':
     podspec = PodSpec('podspec.json')
     for k in podspec.__dict__.keys():
-        if typeof(getattr(podspec, k), 'PodSpecChild'):
+        if is_typeof(getattr(podspec, k), 'PodSpecChild'):
             print(getattr(podspec, k).keys())
